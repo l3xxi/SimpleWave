@@ -1,0 +1,25 @@
+﻿<Window x:Class="NEA_prototype_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NEA_prototype_wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Canvas Margin="10,10,10,148" Name="maincanvas" Grid.ColumnSpan="2" Height="276" Width="780">
+            <Label Content="Label" Name="offsetlabel" Canvas.Left="173" Canvas.Top="239"/>
+        </Canvas>
+        <Slider HorizontalAlignment="Center" Name="valueslider" Margin="0,286,0,0" VerticalAlignment="Top" ValueChanged="Slider_ValueChanged" Width="780" Height="18" Grid.Column="1"/>
+        <Button Content="Load the file" Name="testbutton" HorizontalAlignment="Left" Margin="10,309,0,0" VerticalAlignment="Top" Height="115" Width="380" Click="Button_Click1" Grid.ColumnSpan="2"/>
+        <Button Content="Next sample" x:Name="samplebutton" HorizontalAlignment="Left" Margin="400,309,0,0" VerticalAlignment="Top" Height="57" Width="195" Click="Button_Click2" Grid.ColumnSpan="2"/>
+        <Button Content="Close the file" x:Name="closefile" HorizontalAlignment="Left" Margin="400,371,0,0" VerticalAlignment="Top" Height="53" Width="195" Click="Button_Click3" Grid.ColumnSpan="2"/>
+        <Button Content="Initialise Canvas" x:Name="Canvasinnit" HorizontalAlignment="Left" Margin="600,309,0,0" VerticalAlignment="Top" Height="57" Width="195" Click="Button_Click4" Grid.ColumnSpan="2"/>
+        <Button Content="clear canvas" x:Name="samplebutton_Copy1" HorizontalAlignment="Left" Margin="600,371,0,0" VerticalAlignment="Top" Height="53" Width="195" Click="Button_Click5" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
